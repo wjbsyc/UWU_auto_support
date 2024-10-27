@@ -146,7 +146,7 @@ Options.Triggers.push({
 							return  {cn: ret_text};							
 						}
 					}
-					if(cups[0].rad + cups[1].rad == 1) // 1 inner, 1 outter
+					if(cups[0].rad + cups[1].rad == 1) // 1 inner, 1 outer
 					{
 						data.waitSpin = true;
 						data.SavedCups = cups; 
@@ -169,7 +169,6 @@ Options.Triggers.push({
 		promise: async (data) => {
 			if('waitSpin' in data && data.waitSpin == true && data.SavedCups.length == 2)
 			{ 
-		        // The real Ifrit is the one that is Awoken so find where he is.
 		        data.SpinedCups = (await callOverlayHandler({
 		          call: 'getCombatants',
 		          ids: [parseInt(data.SavedCups[0].id, 16),parseInt(data.SavedCups[1].id, 16)],
