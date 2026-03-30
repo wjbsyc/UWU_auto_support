@@ -73,6 +73,15 @@ const jobConvert = {
   "SGE": 40,
   "贤": 40,
   "贤者": 40,
+  "VPR": 41,
+  "蛇":41,
+  "蝰蛇":41,
+  "蝰蛇剑士":41,
+  "PCT":42,
+  "画":42,
+  "画家":42,
+  "绘灵法师":42,
+
 };
 const port = 2019;  //鲶鱼精邮差所监听的端口
 function mark(actorID, markType) {
@@ -165,8 +174,8 @@ Options.Triggers.push({
           cn: "1:${n1} 2:${n2} 3:${n3}",
         },
         sortRule: {
-          en: "PLD/GNB/DRK/WAR/MNK/DRG/NIN/SAM/RPR/BRD/MCH/DNC/BLM/SMN/RDM/AST/WHM/SCH/SGE",
-          cn: "骑/枪/暗/战/僧/龙/忍/武/镰/诗/机/舞/黑/召/赤/占/白/学/贤",
+          en: "PLD/GNB/DRK/WAR/MNK/DRG/NIN/SAM/RPR/VPR/BRD/MCH/DNC/BLM/SMN/RDM/PCT/AST/WHM/SCH/SGE",
+          cn: "骑/枪/暗/战/僧/龙/忍/武/镰/蛇/诗/机/舞/黑/召/赤/画/占/白/学/贤",
         },
       },
     },
